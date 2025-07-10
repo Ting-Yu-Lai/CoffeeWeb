@@ -1,0 +1,233 @@
+:root {
+  --dark-night: #1e1e2f;
+  --coffee-brown: #5c4033;
+  --milk-white: #efe6dd;
+  --accent-gold: #d6b370;
+  --navy-grey: #2c2c3a;
+  --warm-light: #ffb27d;
+}
+
+body {
+  background-color: var(--dark-night);
+  color: var(--milk-white);
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--warm-light);
+}
+
+.btn-primary {
+  background-color: var(--coffee-brown);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--accent-gold);
+  color: var(--dark-night);
+}
+
+.navbar {
+  background-color: var(--navy-grey) !important;
+}
+.navbar-brand span {
+  color: var(--accent-gold);
+}
+.nav-link {
+  color: var(--milk-white) !important;
+}
+.nav-link:hover {
+  color: var(--warm-light) !important;
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+section h2 {
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--navy-grey);
+  color: var(--milk-white);
+  border: 1px solid var(--coffee-brown);
+}
+.card .btn {
+  background-color: var(--accent-gold);
+  color: var(--dark-night);
+}
+.card .btn:hover {
+  background-color: var(--warm-light);
+  color: var(--dark-night);
+}
+
+footer {
+  background-color: var(--navy-grey);
+}
+footer h5 {
+  color: var(--accent-gold);
+}
+footer a {
+  color: var(--milk-white);
+}
+footer a:hover {
+  color: var(--warm-light);
+}
+
+/* header css */
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.navbar-nav .dropdown-toggle::after {
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
+.navbar-nav .dropdown-menu {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.25rem 0.5rem;
+  }
+}
+/* banner css */
+
+.carousel-item {
+  height: 500px;
+  overflow: hidden;
+}
+
+img.banner1 {
+  width: 100%;
+  height: 100%;
+  /* 與容器高度一致 */
+  object-fit: cover;
+  /* 啟用裁剪並填滿容器 */
+  object-position: 10% 18%;
+  /* 調整焦點，垂直向下移動 */
+}
+
+img.banner2 {
+  width: 100%;
+  height: 100%;
+  /* 與容器高度一致 */
+  object-fit: cover;
+  /* 啟用裁剪並填滿容器 */
+  object-position: 10% 18%;
+  /* 調整焦點，垂直向下移動 */
+}
+
+/* gallery css */
+#gallery {
+  background-color: var(--dark-night);
+}
+
+#gallery h2 {
+  color: var(--accent-gold);
+}
+
+.dessert-card {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-bg {
+  background-image: url("../../images/gallery/background.jpg"); /* 相對路徑從 css 回到根目錄 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--milk-white); /* 確保文字可見 */
+}
+
+/* menu顯示 */
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--milk-white);
+}
+
+.menu-list li span {
+  width: 33%;
+  text-align: left;
+}
+
+.menu-list li span:nth-child(2) {
+  text-align: center;
+}
+
+.menu-list li span:nth-child(3) {
+  text-align: right;
+}
+
+.nav-pills .nav-link {
+  background-color: transparent;
+  color: var(--milk-white);
+  border: 1px solid var(--accent-gold);
+  margin: 0 0.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--accent-gold);
+  color: #000;
+}
